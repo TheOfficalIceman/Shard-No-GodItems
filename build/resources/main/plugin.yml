@@ -1,0 +1,34 @@
+name: Shard
+description: Shard Acsencion 
+version: '1.0-SNAPSHOT'
+main: youss3f.unaux.com.shardascension.ShardAscensionPlugin
+api-version: '1.21'
+load: POSTWORLD
+authors: [ CryVux ]
+
+commands:
+  rollability:
+    description: Roll a new ability
+    usage: /rollability
+  ability:
+    description: Use your current ability
+    usage: /ability
+  abilityswap:
+    description: Swap to your other ability
+    usage: /abilityswap
+  ascensiongive:
+    description: Give ascension fragments
+    usage: /ascensiongive <player> <amount>
+    permission: shardascension.admin
+  setability:
+    description: Set a player's ability (admin only)
+    usage: /setability <player> <ability>
+    permission: shardascension.admin
+  setshards:
+    description: Add shards to a player, stacking up to 3 max (admin only)
+    usage: /setshards <player> <amount>
+    permission: shardascension.admin
+
+permissions:
+  shardascension.admin:
+    default: op

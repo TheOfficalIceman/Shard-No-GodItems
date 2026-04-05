@@ -1,0 +1,29 @@
+modules = ["java-graalvm22.3"]
+[nix]
+channel = "stable-25_05"
+
+[agent]
+expertMode = true
+
+[workflows]
+runButton = "Project"
+
+[[workflows.workflow]]
+name = "Project"
+mode = "parallel"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "workflow.run"
+args = "Build Plugin"
+
+[[workflows.workflow]]
+name = "Build Plugin"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "JAVA_HOME=/nix/store/3ilfkn8kxd9f6g5hgr0wpbnhghs4mq2m-openjdk-21.0.7+6 ./gradlew build"
+
+[workflows.workflow.metadata]
+outputType = "console"

@@ -1,0 +1,44 @@
+max-abilities: 2
+keep-fragments-on-death: true
+
+ui:
+  particles-enabled: true
+  sounds-enabled: true
+  boss-bar-enabled: false
+
+items:
+  fragment:
+    custom-model-data: 10001
+    enchants:
+      durability: 1
+  combination:
+    custom-model-data: 10002
+    enchants:
+      loyalty: 1
+
+abilities:
+  dash: { enabled: true, cooldown: 8, strength: 2.1 }
+  blink: { enabled: true, cooldown: 10, range: 8 }
+  shard_burst: { enabled: true, cooldown: 12, damage: 6, radius: 4 }
+  shard_rain: { enabled: true, cooldown: 18, damage: 4, radius: 5, waves: 4 }
+  shockwave: { enabled: true, cooldown: 14, damage: 5, radius: 5, knockback: 1.8 }
+  wind_step: { enabled: true, cooldown: 9, speed-amplifier: 2, jump-amplifier: 1, duration-ticks: 80 }
+  life_steal: { enabled: true, cooldown: 13, damage: 5, heal: 4, range: 8 }
+  flame_wave: { enabled: true, cooldown: 14, damage: 6, radius: 5, fire-ticks: 100 }
+  ice_prison: { enabled: true, cooldown: 18, duration-ticks: 80, range: 10 }
+  thunder_strike: { enabled: true, cooldown: 16, damage: 7, range: 18 }
+  void_pull: { enabled: true, cooldown: 13, radius: 7, force: 1.2, damage: 3 }
+  shadow_step: { enabled: true, cooldown: 12, damage: 5, range: 10 }
+  earth_slam: { enabled: true, cooldown: 15, damage: 7, radius: 5 }
+  shard_armor: { enabled: true, cooldown: 25, absorption: 8, duration-ticks: 140 }
+  radiant_heal: { enabled: true, cooldown: 17, heal: 6, radius: 6 }
+  time_burst: { enabled: true, cooldown: 19, duration-ticks: 80, radius: 6 }
+  gravity_well: { enabled: true, cooldown: 20, duration-ticks: 70, radius: 7, force: 0.24 }
+  crystal_barrage: { enabled: true, cooldown: 15, shots: 6, damage: 3.5, range: 18 }
+  phoenix_rise: { enabled: true, cooldown: 26, heal: 8, duration-ticks: 120 }
+  ascension_surge: { enabled: true, cooldown: 30, duration-ticks: 120, damage: 8, radius: 6 }
+  sonic_dash: { enabled: true, cooldown: 14, strength: 3.2, damage: 6 }
+  thunderstorm: { enabled: true, cooldown: 28, damage: 6, strikes: 5, radius: 6 }
+  flame_barrage: { enabled: true, cooldown: 24, shots: 8, damage: 4.5, fire-ticks: 120 }
+  vampiric_surge: { enabled: true, cooldown: 24, damage: 5, heal: 3.5, radius: 7 }
+  frozen_pull: { enabled: true, cooldown: 26, duration-ticks: 90, radius: 6, force: 0.3 }
